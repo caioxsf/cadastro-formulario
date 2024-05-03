@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+form
+{
+    border: 1px solid black;
+    width: 20%;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input, select
+{
+    padding: 5px;
+    outline: none;
+}
+
+option
+{
+    font-size: 15px;
+}
+
+.container-form
+{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+legend
+{
+    font-size: 25px;
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+label
+{
+    position: relative;
+    top: 14px;
+
+}
+
+.botoes
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn
+{
+    width: 50%;
+    cursor: pointer;
+
+    background-color: lightskyblue;
+    border: 1px solid transparent;
+    padding-block: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover
+{
+    background-color: lightcoral;
+}
+
+.cad:hover
+{
+    background-color: lightgreen;
+}
+
+.voltar
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.inicio
+{
+    padding: 12px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+    padding-block: 15px;
+    padding-inline: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.inicio:hover
+{
+    background-color: lightgray;
+}
