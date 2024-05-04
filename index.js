@@ -25,9 +25,9 @@ app.use('/cadastrarAlunos', (req,resp) => {
         telefone: telefone
     });
 
-    resp.write(`<h1>${nome} foi cadastrado com sucesso!<h1><br>`);
-    resp.write('<a href="/listarUsuarios">Listar alunos</a><br>');
-    resp.write('<a href="cadastro.html">Cadastrar mais alunos</a>');
+    resp.write(`<h1 style="font-family: sans-serif;">${nome} foi cadastrado com sucesso!<h1><br>`);
+    resp.write('<a href="/listarUsuarios" style="font-family: sans-serif;">Listar alunos</a><br>');
+    resp.write('<a href="cadastro.html" style="font-family: sans-serif;">Cadastrar mais alunos</a>');
     resp.end();
 });
 
