@@ -37,7 +37,7 @@ app.use('/cadastrarAlunos', (req,resp) => {
     resp.write('<a href="/listarUsuarios" style="font-family: sans-serif;">Listar alunos</a><br>');
     resp.write('<a href="cadastro.html" style="font-family: sans-serif;">Cadastrar mais alunos</a>');
     resp.write("</body>");
-    resp.write("</html>");
+    resp.write('</html>');
     resp.end();
 });
 
