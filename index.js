@@ -25,9 +25,19 @@ app.use('/cadastrarAlunos', (req,resp) => {
         telefone: telefone
     });
 
+    resp.write("<!DOCTYPE html>");
+    resp.write("<html lang='en'>");
+    resp.write("<head>");
+    resp.write("    <meta charset='UTF-8'>");
+    resp.write("    <meta name='viewport' content='width=device-width, initial-scale=1.0'>");
+    resp.write("    <title></title>");
+    resp.write("</head>");
+    resp.write("<body>");
     resp.write(`<h1 style="font-family: sans-serif;">${nome} foi cadastrado com sucesso!<h1><br>`);
     resp.write('<a href="/listarUsuarios" style="font-family: sans-serif;">Listar alunos</a><br>');
     resp.write('<a href="cadastro.html" style="font-family: sans-serif;">Cadastrar mais alunos</a>');
+    resp.write("</body>");
+    resp.write("</html>");
     resp.end();
 });
 
