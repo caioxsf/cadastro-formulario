@@ -6,7 +6,7 @@ const app = express();
 
 var listaUsuario = [];
 
-app.use(express.static('./publico'));
+app.use(express.static(path.join(process.cwd(), 'publico')));
 
 app.use('/cadastrarAlunos', (req,resp) => {
     const nome = req.query.nome;
