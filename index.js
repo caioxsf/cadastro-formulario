@@ -1,5 +1,5 @@
 import express from 'express';
-import { parse } from 'path';
+import path from 'path';
 
 const porta = 3000;
 const host = '0.0.0.0';
