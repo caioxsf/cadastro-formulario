@@ -1,4 +1,5 @@
 import express from 'express';
+import { parse } from 'path';
 
 const porta = 3000;
 const host = '0.0.0.0';
@@ -16,8 +17,6 @@ app.use('/cadastrarAlunos', (req,resp) => {
     const telefone = req.query.telefone;
 
     listaUsuario.push({     
-
-        
         nome: nome,
         instituicao: instituicao,
         curso: curso,
